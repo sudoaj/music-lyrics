@@ -56,9 +56,23 @@ for child in lyricRoot:
 
 # here are our lyricsssss yahhhh
 
-print(lyricRoot[9].text)
+# print(lyricRoot[9].text)
 
+# this is the artist name according to the api. If the search goes through we can scan the artist name from
+# the api and compare with what we searched.
 
+print(lyricRoot[4].text)
+print()
+print()
+
+# this is one way of dealing with lyric searches
+# this is just super rudimentary but it works
+
+if(lyricRoot[4].text.lower() == artist.lower()):
+    print("This lyric is available!")
+    print(lyricRoot[9].text)
+else:
+    print("This lyric is unavailable.")
 
 # future steps = save lyrics to a variable and split it up into a list/dic of words
 # then count words
