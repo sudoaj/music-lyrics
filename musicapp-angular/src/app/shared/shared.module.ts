@@ -5,7 +5,8 @@ import { NavComponent } from './layout/nav/nav.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { SongCardComponent } from './components/song-card/song-card.component';
 import { AppRoutingModule } from '../app-routing.module';
-import { AlbumCardComponent } from './components/album-card/album-card.component'
+import { AlbumCardComponent } from './components/album-card/album-card.component';
+import { SongDetailsComponent } from './components/song-details/song-details.component'
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { AlbumCardComponent } from './components/album-card/album-card.component
     NavComponent,
     HeaderComponent,
     SongCardComponent,
-    AlbumCardComponent
+    AlbumCardComponent,
+    SongDetailsComponent
   ],
   imports: [
     CommonModule,
