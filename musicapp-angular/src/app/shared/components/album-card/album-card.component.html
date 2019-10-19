@@ -1,48 +1,25 @@
 <div class="card shadow mb-8">
     <div class="card-header py-3">
-        <h6 class="text-primary font-weight-bold m-0">Album</h6>
+        <!-- <h6 class="text-primary font-weight-bold m-0">Album</h6> -->
+        <h6 class="mb-0"><strong>{{albumTittle}}</strong></h6>
+        <span class="text-xs">{{albumArtiste}}</span>
     </div>
+    
+          
+    
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
-            <div class="row align-items-center no-gutters">
-                <div class="col mr-2">
-                    <h6 class="mb-0"><strong>Scorpion</strong></h6><span
-                        class="text-xs">Drake</span>
-                </div>
-                <!-- <div class="col-auto">
-                    <div class="custom-control custom-checkbox"><input
-                            class="custom-control-input" type="checkbox"
-                            id="formCheck-1"><label class="custom-control-label"
-                            for="formCheck-1"></label></div>
-                </div> -->
-                
+            <div class="row">
+                    <app-album-song-card class="col-md-6 col-xl-6 mb-4" [albumSongNames]="albumSongName[0]"></app-album-song-card>
+                    <app-album-song-card class="col-md-6 col-xl-6 mb-4" [albumSongNames]="albumSongName[1]"></app-album-song-card>
             </div>
-            <app-song-card class="col-md-6 col-xl-3 mb-4"></app-song-card>
+            <div class="row">
+                    <app-album-song-card class="col-md-6 col-xl-6 mb-4" [albumSongNames]="albumSongName[2]"></app-album-song-card>
+                    <app-album-song-card class="col-md-6 col-xl-6 mb-4" [albumSongNames]="albumSongName[3]"></app-album-song-card>
 
-
+            </div>
+            
 
         </li>
-
-        <li class="list-group-item">
-            <div class="row align-items-center no-gutters">
-                <!-- <div class="col mr-2">
-                    <h6 class="mb-0"><strong>Lunch meeting</strong></h6><span
-                        class="text-xs">10:30 AM</span>
-                </div> -->
-                <!-- <div class="col-auto">
-                    <div class="custom-control custom-checkbox"><input
-                            class="custom-control-input" type="checkbox"
-                            id="formCheck-1"><label class="custom-control-label"
-                            for="formCheck-1"></label></div>
-                </div> -->
-                
-            </div>
-            <app-song-card class="col-md-6 col-xl-3 mb-4"></app-song-card>
-
-
-
-        </li>
-        
-        
     </ul>
 </div>

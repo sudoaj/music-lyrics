@@ -2,8 +2,23 @@
     <div class="d-sm-flex justify-content-between align-items-center mb-4">
         <h3 class="text-dark mb-0">Home</h3>
     </div>
-
-<h3>Songs</h3><hr>
+    
+    <h3>Artists</h3>
+    <hr>
+    <div class="row">
+        <app-artiste-card [artisteAvartar]="source[0]" [artisteName]="artisteName[0]"></app-artiste-card>
+        <app-artiste-card [artisteAvartar]="source[1]" [artisteName]="artisteName[1]"></app-artiste-card>
+        <app-artiste-card [artisteAvartar]="source[0]" [artisteName]="artisteName[0]"></app-artiste-card>
+        <app-artiste-card [artisteAvartar]="source[1]" [artisteName]="artisteName[1]"></app-artiste-card>
+        <app-artiste-card [artisteAvartar]="source[0]" [artisteName]="artisteName[0]"></app-artiste-card>
+        <app-artiste-card [artisteAvartar]="source[1]" [artisteName]="artisteName[1]"></app-artiste-card>
+        
+       
+        
+    </div>   
+    
+    <h3>Songs</h3>
+    <hr>
     <div class="row">
 
         <app-song-card class="col-md-6 col-xl-3 mb-4"></app-song-card>
@@ -11,12 +26,16 @@
         <app-song-card class="col-md-6 col-xl-3 mb-4"></app-song-card>
         <app-song-card class="col-md-6 col-xl-3 mb-4"></app-song-card>
     </div>
-<h3>Albums</h3><hr>
+
+    <h3>Albums</h3>
+    <hr>
     <div class="row">
 
-        <app-album-card class="col-md-6 col-xl-3 mb-4"></app-album-card>
-        <app-album-card class="col-md-6 col-xl-3 mb-4"></app-album-card>
-        <app-album-card class="col-md-6 col-xl-3 mb-4"></app-album-card>
-        <app-album-card class="col-md-6 col-xl-3 mb-4"></app-album-card>
+        <app-album-card [albumTitles]="albumTitles[0]"  [albumArtiste]="artisteName[0]" class="col-md-6 col-xl-3 mb-4"></app-album-card>
+        <app-album-card [albumTitles]="albumTitles[1]"  [albumArtiste]="artisteName[1]" class="col-md-6 col-xl-3 mb-4"></app-album-card>
+        <app-album-card [albumTitles]="albumTitles[1]"  [albumArtiste]="artisteName[2]" class="col-md-6 col-xl-3 mb-4"></app-album-card>
+        <app-album-card [albumTitles]="albumTitles[1]"  [albumArtiste]="artisteName[3]" class="col-md-6 col-xl-3 mb-4"></app-album-card>
+        
     </div>
 </div>
+

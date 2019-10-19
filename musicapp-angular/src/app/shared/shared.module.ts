@@ -6,7 +6,10 @@ import { HeaderComponent } from './layout/header/header.component';
 import { SongCardComponent } from './components/song-card/song-card.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { AlbumCardComponent } from './components/album-card/album-card.component';
-import { SongDetailsComponent } from './components/song-details/song-details.component'
+import { SongDetailsComponent } from './components/song-details/song-details.component';
+import { AlbumSongCardComponent } from './components/album-song-card/album-song-card.component';
+import { ArtisteCardComponent } from './components/artiste-card/artiste-card.component'
+
 
 
 @NgModule({
@@ -16,7 +19,9 @@ import { SongDetailsComponent } from './components/song-details/song-details.com
     HeaderComponent,
     SongCardComponent,
     AlbumCardComponent,
-    SongDetailsComponent
+    SongDetailsComponent,
+    AlbumSongCardComponent,
+    ArtisteCardComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +32,8 @@ import { SongDetailsComponent } from './components/song-details/song-details.com
     NavComponent,
     HeaderComponent,
     SongCardComponent,
-    AlbumCardComponent
+    AlbumCardComponent,
+    ArtisteCardComponent
   ]
 })
 export class SharedModule { }
