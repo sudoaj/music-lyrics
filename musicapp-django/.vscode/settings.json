@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/Users/lagos/.local/share/virtualenvs/musicapp-django-xRrPhEUJ/bin/python"
+    "python.pythonPath": "/Users/lagos/.local/share/virtualenvs/musicapp-django-xRrPhEUJ/bin/python",
+    "python.formatting.provider": "black"
 }

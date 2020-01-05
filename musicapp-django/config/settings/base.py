@@ -18,7 +18,7 @@ import os
 
 # https://medium.com/@djstein/modern-django-part-1-project-refactor-and-meeting-the-django-settings-api-d2784efb606f
 ROOT_DIR = environ.Path(__file__) - 3
-APPS_DIR = ROOT_DIR.path('project')
+APPS_DIR = ROOT_DIR.path('api/v1')
 # TEMPLATE_DIR = ROOT_DIR.path('templates')
 
 env = environ.Env()
@@ -68,6 +68,8 @@ LOCAL_APPS = (
 
 API_APPS = (
     'api.v1.account',
+    'api.v1.music',
+
 )
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS + API_APPS
