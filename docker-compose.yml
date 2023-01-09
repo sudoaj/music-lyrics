@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+    angular-music:
+        build: ./musicapp-angular
+        container_name: angular-music
+        ports:
+            - "80:80"
+        depends_on:
+            - django-music
+    django-music:
+        build: ./musicapp-django
+        container_name: django-music
+        command: python manage.py runserver 0.0.0.0:8000
+        volumes:
+            - ./musicapp-django/:/usr/src/app/
+        ports:
+            - "8000:8000"
+    #     depends_on: 
+    #         - pgdb
+    # pgdb:
+    #     image: postgres
+    #     container_name: pgdb
+    #     environment:
+    #         - POSTGRES_DB=postgres
+    #         - POSTGRES_USER=postgres
+    #         - POSTGRES_PASSWORD=postgres
