@@ -1,6 +1,5 @@
 from django.db import models
 from django.utils import timezone
-from django_auto_one_to_one import AutoOneToOneModel
 
 
 song_genre= (
