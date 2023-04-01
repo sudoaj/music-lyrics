@@ -41,17 +41,14 @@ DJANGO_APPS = (
 THIRD_PARTY_APP = (
     'rest_framework',
 )
-LOCAL_APPS = (
-    'project.v1.homepageapp',
-    'project.v1.aboutpageapp',
-)
+
 API_APPS = (
     'api.v1.homepage',
     'api.v1.aboutpage',
     'api.v1.music',
 
 )
-INSTALLED_APPS = DJANGO_APPS+THIRD_PARTY_APP+LOCAL_APPS + API_APPS
+INSTALLED_APPS = DJANGO_APPS+THIRD_PARTY_APP+API_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
